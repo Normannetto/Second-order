@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    ul {
+    list-style: none;
+    }
+    .table{
+        height: 50px;
+        width: 400px;
+        text-align: center;
+        border: 1px solid black;
+        
+        border-collapse:collapse;
+        border-radius: 100px;
+        
+    }
+    th{
+        background-color:rgba(150, 179, 208, 0.781);
+
+    }
+    .tr{
+        background-color:rgb(224, 232, 237);
+    }
+    .in
+    {
+        width: 500px;
+        height: 50px;
+        text-align:left;
+        padding: 2px;
+    }
+    .input{
+       align-items: left;
+    }
+    .sec
+    {
+        height: 50px;
+        width: 280px;
+        padding: 2px;
+
+    }
+    .textbox
+    {
+        background: url(plus1.jpg) left no-repeat;
+    }
+    .mess
+    {
+        background: url(mess1.jpg) left no-repeat;
+    }
+    #button
+    {
+        background-color:rgb(12 , 143 , 95);
+        color: white;
+        border-radius: 5px;
+        margin-left: 300px;
+        height: 35px;
+        width: 80px;
+        text-align: center;
+    }
+</style>
+<title>second </title>
+</head>
+<body>
+
+<h1>Available Phones at ABC Store</h1>
+<ul>
+        <li><dt><img src="plus1.jpg"/> <b> Apple</b></dt></li>
+        <li><dd><img src="star1.jpg"/>  iPhone 4</dd></li>
+        <li><dd><img src="star1.jpg"/>  iPhone 4s</dd></li>
+        <li><dd><img src="star1.jpg"/>  iPhone 5</dd></li>
+        <li><dd><img src="star1.jpg"/>  iPhone 5s</dd></li>
+        <li><dd><img src="star1.jpg"/>  iPhone 6</dd></li>
+        <li><dd><img src="star1.jpg"/>  iPhone 6 plus</dd></li>
+    
+    </ul>
+<ul>
+        <li><dt><img src="plus1.jpg"/> <b> Samsung</b></dt></li>
+        <li><dd><img src="star1.jpg"/>  Galaxy S4</dd></li>
+        <li><dd><img src="star1.jpg"/>  Galaxy S5</dd></li>
+        <li><dd><img src="star1.jpg"/>  Galaxy Note 3</dd></li>
+        <li><dd><img src="star1.jpg"/>  Galaxy Note 4</dd></li>
+        
+    </ul>
+<ul>
+        <li><dt><img src="plus1.jpg"/> <b> Huawei</b></dt></li>
+        <li><dd><img src="star1.jpg"/>  Honor 4X</dd></li>
+        <li><dd><img src="star1.jpg"/>  Honor 6</dd></li>
+        <li><dd><img src="star1.jpg"/>  Ascend Y550</dd></li>
+        <li><dd><img src="star1.jpg"/>  Ascend G700</dd></li>
+            
+    </ul>
+<hr>
+<h2>Skills Development Workshop</h2>
+<p>We wil conduct skills development workshop every tuesday</p>
+<table class="table" border="1">
+    <tr><th></th>
+    <th>9 am </th>
+    <th>10 am </th>
+    <th>11 am </th>
+    <th>12 am </th>
+</tr>
+<tr class="tr">
+    <td> Monday </td>
+    <td colspan="2">Geography</td>
+    <td> Math</td>
+    <td> Arts</td>
+</tr>
+<tr>
+    <td> Tuesday </td>
+    <td colspan="3"> Skill development Workshop</td>
+    <td> Home Ec </td>
+</tr>
+    </table>
+    <br>        
+<hr>
+<h3>Program Schedule</h3>
+<table class="table" border="1">
+    <tr><th></th>
+    <th>ABC</th>
+    <th>BBC</th>
+    <th>CNN</th>
+</tr>
+<tr class="tr">
+    <td>6 pm - 7 pm </td>
+    <td rowspan="2" >Movie</td>
+    <td>Comedy</td>
+    <td>News</td>
+</tr>
+<tr>
+    <td>7 pm - 8 pm</td>
+    <td> Sports</td>
+    <td>Current Affairs</td>
+</tr>
+</table>
+<br>
+<hr>
+<br>
+<form method="get" >
+    <fieldset style="width:400px; color:rgb(26, 25, 25);">
+        <legend>Subscribe Now</legend>
+        <table class="in">
+    <tr> <td><label>Your  Name: </label></td>
+        <td><input type="text" class="textbox" name="Yours Name" value="" required:"required"/></td>
+    </tr>
+    <tr>
+        <td><lablel>Your Email</lablel></td>
+        <td><input type="text" class="mess" name="Your email" value="" required:"required"/></td>   
+    </tr>
+    </table>
+    <table class="sec">
+        <tr>
+            <td><label>Country</label></td>
+       <td class="input" ><select name="country">
+           <option vlaue="Pakistan">Pakistan</option>
+           <option value="India">India</option>
+           <option value="USA">USA</option>
+           <option value="Germany">Germany</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td><label>Are you a member?</label></td>
+        <td>
+            <input type="radio" name="member" vlaue="Yes"/>Yes
+            <input type="radio" name="member" vlaue="No"/>NO
+        </td>
+    </tr>
+    </table>
+    </fieldset>
+</form>
+<input type="submit" value="Subscribe" id="button"/> 
+</body>
+</html>
